@@ -7,13 +7,10 @@ function Template({
   data // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
-  const { frontmatter, html, id } = markdownRemark
-
-  const hideAnchor = (frontmatter.hideAnchor === null) ? false : frontmatter.hideAnchor
-  const hideSidebar = (frontmatter.sidebar === null) ? true : false
+  const { frontmatter, html } = markdownRemark
 
   return (
-    <Layout onPostPage={true}>
+    <Layout>
       <Seo title={frontmatter.title}></Seo>
       <div className="blog-post-container">
         <div className="blog-post">
