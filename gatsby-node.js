@@ -5,3 +5,6 @@
  */
 
 // You can delete this file if you're not using it
+
+exports.createPages = require('./gatsby/createPages')
+exports.onCreateNode = require('./gatsby/onCreateNode')
