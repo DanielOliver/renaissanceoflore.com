@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.readable-title {
+    @apply font-sans text-6xl text-gray-800 text-center
+}
