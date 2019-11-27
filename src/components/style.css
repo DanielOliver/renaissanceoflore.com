@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    color: blue;
+}
+a:active,
+a:hover {
+    outline-width: 0;
+    color: red;
+}
+
+
 .readable-title {
     @apply font-sans text-6xl text-gray-800 text-center
+}
+
+.readable-subtitle {
+    @apply font-sans text-3xl text-gray-800 text-center
+}
+
+.readable-header1 {
+    @apply font-sans text-2xl text-gray-800
+}
+
+.readable-text {
+    @apply font-sans text-lg text-gray-800 mb-4
+}
+
+.blog-post-content p {
+    @apply font-sans text-lg text-gray-800 leading-normal mb-5
 }

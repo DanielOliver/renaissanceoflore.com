@@ -7,7 +7,7 @@ import CampaignList from "../components/campaignlist"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Coming soon</h1>
+    <h1 className="readable-header1">Campaigns</h1>
     <CampaignList></CampaignList>
   </Layout>
 )

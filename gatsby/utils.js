@@ -7,3 +7,6 @@ module.exports.trimByChar = function (string, character) {
     const last = [...string].reverse().findIndex(char => char !== character);
     return string.substring(first, string.length - last);
 }
+module.exports.isEmptyOrSpaces = function (str) {
+    return str === null || str === undefined || str.match(/^ *$/) !== null;
+}

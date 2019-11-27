@@ -27,7 +27,9 @@ function CampaignList() {
       allMarkdownRemark.nodes.map(function (x) {
         return (
           <div key={x.id}>
-            <Link to={x.fields.slug} >{x.frontmatter.title}</Link>
+            <p className="readable-text">
+              <Link to={x.fields.slug}>{x.frontmatter.title}</Link>
+            </p>
           </div>
         )
       }

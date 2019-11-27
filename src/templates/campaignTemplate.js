@@ -10,16 +10,14 @@ function Template({
   const { frontmatter, html } = markdownRemark
 
   return (
-    <Layout>
+    <Layout subTitle={`Campaign: ${frontmatter.title}`}>
       <Seo title={frontmatter.title}></Seo>
-      <div className="blog-post-container">
-        <div className="blog-post">
-          {frontmatter.showTitle && <h1 align="center">{frontmatter.title}</h1>}
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-        </div>
+      <div>
+        {/* {frontmatter.showTitle && <h1 align="center">{frontmatter.title}</h1>} */}
+        <div
+          className="blog-post-content"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </div>
     </Layout>
   )
