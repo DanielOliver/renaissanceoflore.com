@@ -17,6 +17,7 @@ module.exports = exports.createPages = ({ actions, graphql }) => {
             }
             frontmatter {
               type
+              campaign
             }
           }
         }
@@ -34,7 +35,9 @@ module.exports = exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: node.fields.slug,
         component: pageTemplate,
-        context: {}, // additional data can be passed via context
+        context: {
+          campaign: node.frontmatter.campaign
+        }, // additional data can be passed via context
       })
     })
   })

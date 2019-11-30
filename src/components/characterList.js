@@ -1,19 +1,20 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
-function CampaignList() {
+function CharacterList({ campaign }) {
   const { allMarkdownRemark } = useStaticQuery(
     graphql`
     query {
         allMarkdownRemark(
-            sort: {order: DESC, fields: [frontmatter___date]}, 
+            sort: {order: DESC, fields: [frontmatter___title]}, 
             limit: 1000, 
-            filter: {frontmatter: {type: {eq: "campaign"}}}) {
+            filter: {frontmatter: {type: {eq: "character"}}}) {
           nodes {
             frontmatter {
               type
               date
               title
+              campaign
             }
             fields {
               slug
@@ -27,7 +28,7 @@ function CampaignList() {
 
   return (
     <ul> {
-      allMarkdownRemark.nodes.map(function (x) {
+      allMarkdownRemark.nodes.filter((x) => x.frontmatter.campaign === campaign).map(function (x) {
         return (
           <li key={x.id}>
             <p className="readable-text">
@@ -41,4 +42,4 @@ function CampaignList() {
   )
 }
 
-export default CampaignList
+export default CharacterList
