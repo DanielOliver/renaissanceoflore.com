@@ -6,6 +6,7 @@ type: npc
 campaign: a-past-and-future-secret
 characterType: Ratman Merchant
 name: Dribbler, the Persistent
+sessionIntroduced: 2019-11-24/wake-up-and-smell-the-gnolls
 ---
 
 Tall for a ratman (normally 3’3”) by being nearer 4 feet tall. Very thin and scrawny, as though under-nourished.  Smells like the city dump, which Dribbler spends some time scavenging in.
