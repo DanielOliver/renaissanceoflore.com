@@ -3,7 +3,7 @@ date: 2019-11-24
 title: Belor Clanshield
 url: belor
 type: character
-campaign: a-new-beginning
+campaign: a-past-and-future-secret
 characterType: Hill Dwarf Cleric
 name: Belor Clanshield
 ---

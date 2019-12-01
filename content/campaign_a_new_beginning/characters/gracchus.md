@@ -3,7 +3,7 @@ date: 2019-11-24
 title: Gracchus
 url: gracchus
 type: character
-campaign: a-new-beginning
+campaign: a-past-and-future-secret
 characterType: Half-Orf Fighter
 name: Gracchus
 ---

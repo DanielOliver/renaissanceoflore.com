@@ -5,11 +5,12 @@ import Seo from "../components/seo"
 
 import CharacterList from "../components/characterList"
 import SessionList from "../components/sessionList"
+import NpcList from "../components/npcList"
 
 function Template({
   data // this prop will be injected by the GraphQL query below.
 }) {
-  const { markdownRemark, sessions, characters } = data // data.markdownRemark holds our post data
+  const { markdownRemark, sessions, characters, npcs } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
 
   return (
@@ -28,6 +29,10 @@ function Template({
         <br />
         <h1 className="readable-header1">Characters</h1>
         <CharacterList characters={characters.nodes}></CharacterList>
+
+        <br />
+        <h1 className="readable-header1">NPCs</h1>
+        <NpcList characters={npcs.nodes}></NpcList>
 
       </div>
     </Layout>
@@ -55,6 +60,21 @@ export const pageQuery = graphql`
           sort: {order: ASC, fields: [frontmatter___title]}, 
           limit: 1000, 
           filter: {frontmatter: {type: {eq: "character"}}, fields: {campaignSlug: {eq: $path}}}) {
+        nodes {
+          frontmatter {
+            title
+            date
+          }
+          fields {
+            slug
+          }
+          id
+        }
+    }
+    npcs: allMarkdownRemark(
+          sort: {order: ASC, fields: [frontmatter___title]}, 
+          limit: 1000, 
+          filter: {frontmatter: {type: {eq: "npc"}}, fields: {campaignSlug: {eq: $path}}}) {
         nodes {
           frontmatter {
             title

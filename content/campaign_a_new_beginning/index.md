@@ -1,9 +1,9 @@
 ---
 date: 2019-11-24
-title: A New Beginning!
-url: a-new-beginning
+title: A Past and Future Secret
+url: a-past-and-future-secret
 type: campaign
-campaign: a-new-beginning
+campaign: a-past-and-future-secret
 ---
 
-Truly a campaign of terror!
+Welcome to the first campaign from out intrepid heroes!

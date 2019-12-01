@@ -3,7 +3,7 @@ date: 2019-11-24
 title: Cletus Moonshine
 url: cletus-moonshine
 type: character
-campaign: a-new-beginning
+campaign: a-past-and-future-secret
 characterType: Half-Elf Druid
 name: Cletus Moonshine
 ---
