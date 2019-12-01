@@ -22,7 +22,6 @@ const Layout = ({ children, subTitle }) => {
       }
     }
   `)
-  console.log(subTitle)
 
   return (
     <>

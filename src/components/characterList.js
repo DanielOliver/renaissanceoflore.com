@@ -1,34 +1,11 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { Link } from "gatsby"
+import PropTypes from 'prop-types';
 
-function CharacterList({ campaign }) {
-  const { allMarkdownRemark } = useStaticQuery(
-    graphql`
-    query {
-        allMarkdownRemark(
-            sort: {order: DESC, fields: [frontmatter___title]}, 
-            limit: 1000, 
-            filter: {frontmatter: {type: {eq: "character"}}}) {
-          nodes {
-            frontmatter {
-              type
-              date
-              title
-              campaign
-            }
-            fields {
-              slug
-            }
-            id
-          }
-        }
-      }      
-    `
-  )
-
+function CharacterList({ characters }) {
   return (
     <ul> {
-      allMarkdownRemark.nodes.filter((x) => x.frontmatter.campaign === campaign).map(function (x) {
+      characters.map(function (x) {
         return (
           <li key={x.id}>
             <p className="readable-text">
@@ -40,6 +17,17 @@ function CharacterList({ campaign }) {
       )}
     </ul>
   )
+}
+
+CharacterList.propTypes = {
+  characters: PropTypes.arrayOf(PropTypes.shape({
+    frontmatter: PropTypes.shape({
+      title: PropTypes.string.isRequired
+    }).isRequired,
+    fields: PropTypes.shape({
+      slug: PropTypes.string.isRequired
+    }).isRequired,
+  })).isRequired,
 }
 
 export default CharacterList
