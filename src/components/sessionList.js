@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 import PropTypes from 'prop-types';
+import { formatAsLongDate } from "../../gatsby/utils"
 
 function SessionList({ sessions }) {
-  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' };
   return (
     <ul> {
       sessions.map(function (x) {
-        let parsedDate = new Date(x.frontmatter.date).toLocaleDateString(undefined, options)
+        let parsedDate = formatAsLongDate(x.frontmatter.date)
         return (
           <li key={x.id}>
             <p className="readable-text">

@@ -10,3 +10,7 @@ module.exports.trimByChar = function (string, character) {
 module.exports.isEmptyOrSpaces = function (str) {
     return str === null || str === undefined || str.match(/^ *$/) !== null;
 }
+module.exports.formatAsLongDate = function (date) {
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
+    return new Date(date).toLocaleDateString(undefined, options)
+}
