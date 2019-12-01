@@ -12,12 +12,16 @@ function Template({
   return (
     <Layout subTitle={`Character: ${frontmatter.title}`}>
       <Seo title={frontmatter.title}></Seo>
-      <div>
-        <div>
-          <h1 className="readable-header1">
-            From Campaign <Link to={fields.campaignSlug}>: {campaignPage.frontmatter.title}</Link>
-          </h1>
-        </div>
+      <div className="text-center">
+        <h1 className="readable-header1">
+          From Campaign <Link to={fields.campaignSlug}>: {campaignPage.frontmatter.title}</Link>
+        </h1>
+        <br />
+        <p className="readable-header3">
+          {frontmatter.name}
+          <br />
+          {frontmatter.characterType}
+        </p>
         <br />
         <div
           className="blog-post-content"
@@ -43,6 +47,8 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        characterType
+        name
       }
     }
     campaignPage: markdownRemark(frontmatter: { campaign: { eq: $campaign}, type: { eq: "campaign" }}) {

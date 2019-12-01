@@ -1,9 +1,11 @@
 ---
 date: 2019-11-24
-title: Belor
+title: Belor Clanshield
 url: belor
 type: character
 campaign: a-new-beginning
+characterType: Hill Dwarf Cleric
+name: Belor Clanshield
 ---
 
 Belor joined the Dwarven Military at an early age and distinguished himself in defense of his homeland, and in Dwarven wars for expansion. After seeing many of his friends die in a large battle against an orcish incursion, he turned to religion and became an acolyte of Clangeddin Silverbeard, the Dwarven god of war.

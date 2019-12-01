@@ -26,6 +26,10 @@ a:hover {
     @apply font-sans text-2xl text-gray-800
 }
 
+.readable-header3 {
+    @apply font-sans text-xl text-gray-800 mb-1
+}
+
 .readable-text {
     @apply font-sans text-lg text-gray-800 mb-4
 }

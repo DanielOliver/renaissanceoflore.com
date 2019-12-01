@@ -30,7 +30,7 @@ function CampaignList() {
       allMarkdownRemark.nodes.map(function (x) {
         return (
           <li key={x.id}>
-            <p className="readable-text">
+            <p className="readable-header3">
               <Link to={x.fields.slug}>{x.frontmatter.title}</Link>
             </p>
           </li>

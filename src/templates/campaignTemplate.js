@@ -15,7 +15,7 @@ function Template({
   return (
     <Layout subTitle={`Campaign: ${frontmatter.title}`}>
       <Seo title={frontmatter.title}></Seo>
-      <div>
+      <div className="text-center">
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
@@ -52,7 +52,7 @@ export const pageQuery = graphql`
       }
     }
     characters: allMarkdownRemark(
-          sort: {order: DESC, fields: [frontmatter___title]}, 
+          sort: {order: ASC, fields: [frontmatter___title]}, 
           limit: 1000, 
           filter: {frontmatter: {type: {eq: "character"}}, fields: {campaignSlug: {eq: $path}}}) {
         nodes {

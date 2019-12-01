@@ -13,15 +13,13 @@ function Template({
   return (
     <Layout subTitle={`Session: ${frontmatter.title}`}>
       <Seo title={frontmatter.title}></Seo>
-      <div>
-        <div>
-          <h1 className="readable-header1">
-            From Campaign <Link to={fields.campaignSlug}>: {campaignPage.frontmatter.title}</Link>
-          </h1>
-          <p className="readable-text">
-            <i>Published {formatAsLongDate(frontmatter.date)}</i>
-          </p>
-        </div>
+      <div className="text-center">
+        <h1 className="readable-header1">
+          From Campaign <Link to={fields.campaignSlug}>: {campaignPage.frontmatter.title}</Link>
+        </h1>
+        <p className="readable-text">
+          <i>Published {formatAsLongDate(frontmatter.date)}</i>
+        </p>
         <br />
         <div
           className="blog-post-content"
