@@ -35,5 +35,6 @@ a:hover {
 }
 
 .blog-post-content p {
-    @apply font-sans text-lg text-gray-800 leading-normal mb-5
+    @apply font-sans text-lg text-gray-800 leading-normal mb-5 text-justify;
+    text-indent: 2em;    
 }

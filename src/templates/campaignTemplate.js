@@ -16,7 +16,7 @@ function Template({
   return (
     <Layout subTitle={`Campaign: ${frontmatter.title}`}>
       <Seo title={frontmatter.title}></Seo>
-      <div className="text-center">
+      <div className="max-w-5xl">
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}

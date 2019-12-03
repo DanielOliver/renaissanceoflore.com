@@ -15,9 +15,9 @@ function Template({
   return (
     <Layout subTitle={`Session: ${frontmatter.title}`}>
       <Seo title={frontmatter.title}></Seo>
-      <div className="text-center">
+      <div className="max-w-5xl">
         <h1 className="readable-header1">
-          From Campaign <Link to={fields.campaignSlug}>: {campaignPage.frontmatter.title}</Link>
+          From the Campaign <Link to={fields.campaignSlug}>: {campaignPage.frontmatter.title}</Link>
         </h1>
         <p className="readable-text">
           <i>Published {formatAsLongDate(frontmatter.date)}</i>
@@ -28,14 +28,14 @@ function Template({
           dangerouslySetInnerHTML={{ __html: html }}
         />
 
-        {introducedCharacters &&
+        {introducedCharacters && introducedCharacters.nodes && introducedCharacters.nodes.length > 0 &&
           <>
             <br />
             <h1 className="readable-header1">Introduced Characters</h1>
             <CharacterList characters={introducedCharacters.nodes}></CharacterList>
           </>}
 
-        {introducedNpcs &&
+        {introducedNpcs && introducedNpcs.nodes && introducedNpcs.nodes.length > 0 &&
           <>
             <br />
             <h1 className="readable-header1">Introduced NPCs</h1>

@@ -6,4 +6,4 @@ type: campaign
 campaign: a-past-and-future-secret
 ---
 
-Welcome to the first campaign from out intrepid heroes!
+Welcome to the first campaign from our intrepid heroes!

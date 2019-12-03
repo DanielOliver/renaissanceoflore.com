@@ -13,9 +13,9 @@ function Template({
   return (
     <Layout subTitle={`Character: ${frontmatter.title}`}>
       <Seo title={frontmatter.title}></Seo>
-      <div className="text-center">
+      <div className="max-w-5xl">
         <h1 className="readable-header1">
-          From Campaign <Link to={fields.campaignSlug}>: {campaignPage.frontmatter.title}</Link>
+          From the Campaign <Link to={fields.campaignSlug}>: {campaignPage.frontmatter.title}</Link>
         </h1>
         <br />
         <p className="readable-text">
