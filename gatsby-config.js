@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Renaissance of Lore`,
-    description: `Renaissance of Lore's website.`,
+    description: `Renaissance of Lore is a gaming group that plays Dungeons & Dragons and other role-playing games.`,
     author: `Daniel`,
   },
   plugins: [
