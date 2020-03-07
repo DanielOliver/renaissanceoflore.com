@@ -1,5 +1,5 @@
 ---
-date: 2019-12-15
+date: 2019-12-22
 title: Probabilitor
 url: probabilitor
 type: npc
