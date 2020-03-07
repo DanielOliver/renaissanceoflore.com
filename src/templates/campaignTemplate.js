@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -21,6 +21,11 @@ function Template({
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+
+        <br />
+        <p className="readable-header1">
+          <Link to={`/map/${frontmatter.url}/`}>Maps</Link>
+        </p>
 
         <br />
         <h1 className="readable-header1">Sessions</h1>
@@ -54,6 +59,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         campaign
+        url
       }
     }
     characters: allMarkdownRemark(
