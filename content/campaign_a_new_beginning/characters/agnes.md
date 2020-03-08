@@ -10,3 +10,5 @@ sessionIntroduced: 2019-11-24/wake-up-and-smell-the-gnolls
 ---
 
 Charlatan tendencies
+
+Once nicknamed "Gnoll Thumper" for her original showing in the arena.

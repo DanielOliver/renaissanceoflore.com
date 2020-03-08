@@ -10,3 +10,13 @@ sessionIntroduced: 2020-02-16/what-they-seem
 ---
 
 A massive tattooed Goliath with a passion for forceful evangelism and a great booming voice “Welcome to the Church of Martial Equality! Where all are equal under the sword, the shield, and the spear!”
+
+Chant of Fortitude:
+
+Raise the banner
+Raise it high
+We are not afraid to die
+
+Raise the banner
+Let it fly
+Hold the banner to the sky
