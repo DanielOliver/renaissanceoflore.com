@@ -24,7 +24,7 @@ function Template({
 
         <br />
         <p className="readable-header1">
-          <Link to={`/map/${frontmatter.url}/`}>Maps</Link>
+          <Link to={`/map/${frontmatter.url}`}>Maps</Link>
         </p>
 
         <br />
