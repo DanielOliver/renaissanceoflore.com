@@ -15,6 +15,7 @@ module.exports = exports.createPages = ({ actions, graphql }) => {
             fields {
               slug
               sessionIntroducedSlug
+              sessionRetiredSlug
             }
             frontmatter {
               type
@@ -39,6 +40,7 @@ module.exports = exports.createPages = ({ actions, graphql }) => {
         context: {
           campaign: node.frontmatter.campaign,
           sessionIntroducedSlug: node.fields.sessionIntroducedSlug,
+          sessionRetiredSlug: node.fields.sessionRetiredSlug,
         }, // additional data can be passed via context
       })
     })

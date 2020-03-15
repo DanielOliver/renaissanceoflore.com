@@ -35,6 +35,18 @@ module.exports = exports.onCreateNode = ({ node, getNode, actions }) => {
 
         if (
             Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
+            Object.prototype.hasOwnProperty.call(node.frontmatter, "sessionRetired")
+        ) {
+            let sessionRetired = trimByChar(node.frontmatter.sessionRetired.toLowerCase(), '/')
+            createNodeField({
+                node,
+                name: `sessionRetiredSlug`,
+                value: replacePath(`/session/${sessionRetired}`),
+            })
+        }
+
+        if (
+            Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
             Object.prototype.hasOwnProperty.call(node.frontmatter, "url")
         ) {
             let url = trimByChar(node.frontmatter.url.toLowerCase(), '/')

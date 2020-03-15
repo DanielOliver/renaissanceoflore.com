@@ -5,7 +5,7 @@ import { formatAsLongDate } from "../../gatsby/utils"
 
 function SessionList({ sessions }) {
   return (
-    <ul> {
+    <ol reversed className="ordered-list"> {
       sessions.map(function (x) {
         let parsedDate = formatAsLongDate(x.frontmatter.date)
         return (
@@ -17,7 +17,7 @@ function SessionList({ sessions }) {
         )
       }
       )}
-    </ul>
+    </ol>
   )
 }
 

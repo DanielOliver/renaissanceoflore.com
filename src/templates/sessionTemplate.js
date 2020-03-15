@@ -9,7 +9,7 @@ import CharacterList from "../components/characterList"
 function Template({
   data // this prop will be injected by the GraphQL query below.
 }) {
-  const { markdownRemark, campaignPage, introducedNpcs, introducedCharacters } = data // data.markdownRemark holds our post data
+  const { markdownRemark, campaignPage, introducedNpcs, introducedCharacters, retiredCharacters } = data // data.markdownRemark holds our post data
   const { frontmatter, html, fields } = markdownRemark
 
   return (
@@ -40,6 +40,13 @@ function Template({
             <br />
             <h1 className="readable-header1">Introduced NPCs</h1>
             <NpcList characters={introducedNpcs.nodes}></NpcList>
+          </>
+        }
+        {retiredCharacters && retiredCharacters.nodes && retiredCharacters.nodes.length > 0 &&
+          <>
+            <br />
+            <h1 className="readable-header1">Retired Characters</h1>
+            <CharacterList characters={retiredCharacters.nodes}></CharacterList>
           </>
         }
       </div>
@@ -95,6 +102,21 @@ export const pageQuery = graphql`
           sort: {order: ASC, fields: [frontmatter___title]}, 
           limit: 1000, 
           filter: {frontmatter: {type: {eq: "npc"}}, fields: {sessionIntroducedSlug: {eq: $path}}}) {
+        nodes {
+          frontmatter {
+            title
+            date
+          }
+          fields {
+            slug
+          }
+          id
+        }
+    }
+    retiredCharacters: allMarkdownRemark(
+          sort: {order: ASC, fields: [frontmatter___title]}, 
+          limit: 1000, 
+          filter: {frontmatter: {type: {eq: "character"}}, fields: {sessionRetiredSlug: {eq: $path}}}) {
         nodes {
           frontmatter {
             title

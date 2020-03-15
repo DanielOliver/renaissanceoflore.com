@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 function CharacterList({ characters }) {
   return (
-    <ul> {
+    <ul className="unordered-list"> {
       characters.map(function (x) {
         return (
           <li key={x.id}>

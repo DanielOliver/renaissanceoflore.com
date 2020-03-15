@@ -24,17 +24,30 @@ function Template({
 
         <br />
         <p className="readable-header1">
+          <Link to={`/ruling/${frontmatter.url}`}>Rulings</Link>
+        </p>
+
+        <br />
+        <hr />
+        <br />
+        <p className="readable-header1">
           <Link to={`/map/${frontmatter.url}`}>Maps</Link>
         </p>
 
+        <br />
+        <hr />
         <br />
         <h1 className="readable-header1">Sessions</h1>
         <SessionList sessions={sessions.nodes}></SessionList>
 
         <br />
+        <hr />
+        <br />
         <h1 className="readable-header1">Characters</h1>
         <CharacterList characters={characters.nodes}></CharacterList>
 
+        <br />
+        <hr />
         <br />
         <h1 className="readable-header1">NPCs</h1>
         <NpcList characters={npcs.nodes}></NpcList>

@@ -23,9 +23,9 @@ function Template({
         </p>
         <br />
         <p className="readable-header3">
-          {frontmatter.name}
-          <br />
-          {frontmatter.characterType}
+            Name - {frontmatter.name}
+            <br />
+            Type - {frontmatter.characterType}
         </p>
         <br />
         <div

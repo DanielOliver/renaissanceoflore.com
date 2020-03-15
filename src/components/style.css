@@ -38,3 +38,26 @@ a:hover {
     @apply font-sans text-lg text-gray-800 leading-normal mb-5 text-justify;
     text-indent: 2em;    
 }
+
+.ordered-list {
+    @apply list-decimal;  
+    margin-left: 2em;   
+}
+
+.unordered-list {
+    @apply list-disc;  
+    margin-left: 2em;   
+}
+
+.blog-post-content ol {
+    @apply ordered-list;
+}
+
+.blog-post-content ul {
+    @apply unordered-list;
+    margin-left: 2em;
+}
+
+.blog-post-content li {
+    @apply font-sans text-lg leading-normal mb-5 text-justify;
+}

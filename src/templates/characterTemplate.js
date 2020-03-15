@@ -7,7 +7,7 @@ import { formatAsLongDate } from "../../gatsby/utils"
 function Template({
   data // this prop will be injected by the GraphQL query below.
 }) {
-  const { markdownRemark, campaignPage, sessionPage } = data // data.markdownRemark holds our post data
+  const { markdownRemark, campaignPage, sessionPage, retiredSessionPage } = data // data.markdownRemark holds our post data
   const { frontmatter, html, fields } = markdownRemark
 
   return (
@@ -21,11 +21,19 @@ function Template({
         <p className="readable-text">
           Introduced in <Link to={sessionPage.fields.slug}>: {sessionPage.frontmatter.title}</Link> - <i>Published {formatAsLongDate(sessionPage.frontmatter.date)}</i>
         </p>
+        {retiredSessionPage && retiredSessionPage.fields && retiredSessionPage.fields.slug &&
+          <>
+            <p className="readable-text">
+              Retired in <Link to={retiredSessionPage.fields.slug}>: {retiredSessionPage.frontmatter.title}</Link> - <i>Published {formatAsLongDate(retiredSessionPage.frontmatter.date)}</i>
+            </p>
+          </>
+
+        }
         <br />
         <p className="readable-header3">
-          {frontmatter.name}
-          <br />
-          {frontmatter.characterType}
+            Name - {frontmatter.name}
+            <br />
+            Type - {frontmatter.characterType}
         </p>
         <br />
         <div
@@ -41,7 +49,7 @@ function Template({
 export default Template
 
 export const pageQuery = graphql`
-  query($path: String!, $campaign: String!, $sessionIntroducedSlug: String!) {
+  query($path: String!, $campaign: String!, $sessionIntroducedSlug: String!, $sessionRetiredSlug: String) {
     markdownRemark(fields: { slug: { eq: $path} }) {
       fields {
         slug
@@ -66,6 +74,17 @@ export const pageQuery = graphql`
       }
     }
     sessionPage: markdownRemark(fields: { slug: { eq: $sessionIntroducedSlug}}, frontmatter: {type: { eq: "session" }}) {
+      fields {
+        slug
+      }
+      id
+      html
+      frontmatter {
+        date
+        title
+      }
+    }
+    retiredSessionPage: markdownRemark(fields: { slug: { eq: $sessionRetiredSlug}}, frontmatter: {type: { eq: "session" }}) {
       fields {
         slug
       }
