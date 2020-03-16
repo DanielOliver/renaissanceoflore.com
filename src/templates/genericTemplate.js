@@ -10,7 +10,7 @@ function Template({
   const { frontmatter, html, fields } = markdownRemark
 
   return (
-    <Layout subTitle={`Session: ${frontmatter.title}`}>
+    <Layout subTitle={frontmatter.title}>
       <Seo title={frontmatter.title}></Seo>
       <div className="max-w-5xl">
         <h1 className="readable-header1">
