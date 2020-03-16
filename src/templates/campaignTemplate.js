@@ -52,6 +52,13 @@ function Template({
         <h1 className="readable-header1">NPCs</h1>
         <NpcList characters={npcs.nodes}></NpcList>
 
+        <br />
+        <hr />
+        <br />
+        <p className="readable-header1">
+          <Link to={`/gamemaster/${frontmatter.url}`}>Game Master's Musings</Link>
+        </p>
+
       </div>
     </Layout>
   )

@@ -6,7 +6,7 @@ type: map
 campaign: a-past-and-future-secret
 ---
 
-A past and future secret maps
+The maps of the campaign A Past and Future Secret are shown below.
 
 **Caladan Town**
 
