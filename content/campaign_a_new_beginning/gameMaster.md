@@ -26,6 +26,8 @@ These are the known intents, style, and musings by the Game Master (or Dungeon M
 * Dice rolls should not always be strictly followed. As appropriate, the DM may fudge the dice rolls so long as the players don't catch them doing so. An example of an appropriate scenario is to avoid a Total Party Kill where party revival/capture/imprisonment would not make any sense. This point is not always popular, but I'm not always good at estimating difficulty and so this is a fallback option.
 * To prevent the party from stalling out in discussion, I'll add some timers. These timers could be real or not. One example of a fake timer is tapping dice or metallic objects together behind the DM screen in the rhythm of footsteps. One example of a real timer could be cries for help from an innocent NPC or a bureaucrat poking their nose into the party's business, depends on the session.
 * Whenever a player starts losing interest in the current scene and the player starts doing some random actions on the side, I try to write it down. The consequences of the player's goofing around might come back to bite them later. This is also a hint to me that I need to get the scene moving forward.
+* I'm not trying to create a quiz show where the players will be asking the NPCs questions. I am trying to create a talk show where the player characters are interacting with each other, sharing their viewpoints, and building a worldview based on what they have in common. Relatively little information should be required to spark a player character commentating panel.
+* Monologuing NPCs and villains shouldn't give a lot of dense information. By the time the monologue is over, the players will have forgotten all but one idea from that speech. At most one or two ideas will remain after any speech, but all the audience will really remember is how you made them feel. Hopefully the villain strikes fear instead of boredom.
 
 <br/>
 <hr/>
@@ -58,12 +60,13 @@ I've started following these simple rules for combat encounters as I go:
 1. I, the DM, should not be playing many NPCs on the players' side. *The number of actions that the DM is making as allied NPCs should not exceed the players' actions.* The DM is not here to fight the player's battles.
 2. The players cannot talk their way out of every battle because not every NPC is willing to change their ways. Just because some bard walks in doesn't mean years of life-values for a character are going to change.
 3. Most combat encounters should generally have less enemies than the player count and the enemies should be a greater level in order to balance the encounter. My motivation here is to limit the downtime between player's turns. By limiting the number of turns being taken each round, the entire encounter should be shorter and more content can be fit in a session. And by minimizing time between player's turns, the players should be kept more interested. As for balancing, see the "action economy":  _The economy of actions is the sum total of actions a group of PCs have compared to that of the monsters they face._ [-Sly Flourish][4]
+4. If feasible, a physical or visual encounter map should be provided.
 
 <br/>
 <hr/>
 <br/>
 
-## Inspirations
+### Inspirations
 
 * [Matt Colville][0] for his excellent thoughts about running games.
 * [Critical Role][1] for getting our group into Dungeons & Dragons.
