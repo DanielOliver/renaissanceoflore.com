@@ -28,6 +28,7 @@ These are the known intents, style, and musings by the Game Master (or Dungeon M
 * Whenever a player starts losing interest in the current scene and the player starts doing some random actions on the side, I try to write it down. The consequences of the player's goofing around might come back to bite them later. This is also a hint to me that I need to get the scene moving forward.
 * I'm not trying to create a quiz show where the players will be asking the NPCs questions. I am trying to create a talk show where the player characters are interacting with each other, sharing their viewpoints, and building a worldview based on what they have in common. Relatively little information should be required to spark a player character commentating panel.
 * Monologuing NPCs and villains shouldn't give a lot of dense information. By the time the monologue is over, the players will have forgotten all but one idea from that speech. At most one or two ideas will remain after any speech, but all the audience will really remember is how you made them feel. Hopefully the villain strikes fear instead of boredom.
+* I believe in that concept of multiple fail states. A character's failure should have multiple levels, and then subsequent actions can either decrease or increase the failed state. An example could be a failure by a firbolg to evade a grappling goblin. The goblin is unlikely to entirely restrain a firbolg, but perhaps the goblin is hanging off an arm rendering the arm useless in combat. The firbolg can try to shake the goblin off, but if the firbolg fails, perhaps the goblin climbs higher towards the firbolg's head. There are many ways that failure can happen, and so if there's possibilities between utter success and utter failure, try them out.
 
 <br/>
 <hr/>
@@ -61,6 +62,7 @@ I've started following these simple rules for combat encounters as I go:
 2. The players cannot talk their way out of every battle because not every NPC is willing to change their ways. Just because some bard walks in doesn't mean years of life-values for a character are going to change.
 3. Most combat encounters should generally have less enemies than the player count and the enemies should be a greater level in order to balance the encounter. My motivation here is to limit the downtime between player's turns. By limiting the number of turns being taken each round, the entire encounter should be shorter and more content can be fit in a session. And by minimizing time between player's turns, the players should be kept more interested. As for balancing, see the "action economy":  _The economy of actions is the sum total of actions a group of PCs have compared to that of the monsters they face._ [-Sly Flourish][4]
 4. If feasible, a physical or visual encounter map should be provided.
+5. I prefer to give low armor to monsters. Players don't get a lot of turns in a typical encounter and so I want them to feel strong and powerful. If we're creating a story, missing over half of the attacks should be rare, and then when such failure happens it should be a noteworthy story event.
 
 <br/>
 <hr/>
