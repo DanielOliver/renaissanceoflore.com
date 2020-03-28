@@ -14,6 +14,7 @@ These are the known intents, style, and musings by the Game Master (or Dungeon M
 * [NPCs](#npcs)
 * [World Building](#world-building)
 * [Combat Encounters](#combat-encounters)
+* [End Game Goal](#end-game-goal)
 * [Inspirations](#inspirations)
 
 <br/>
@@ -94,6 +95,16 @@ I've started following these rules for combat encounters as I go:
 <hr/>
 <br/>
 
+### End Game Goal
+
+<br/>
+
+Disregarding what my players may think, I do have an end game goal. In fact, I have several options for the players to work towards. What I don't do is force the players into a particular end game goal. I like the players to come up with their own reason for why they're doing something. This has a lot of room to backfire, because what if the players don't feel motivated to work towards an end game goal? If the players start wandering aimlessly, I'll start throwing encounters, situations, and ethical dilemmas at them. The particular choices for an end game goal for this campaign are not ones I'm going to spoil here for them.
+
+<br/>
+<hr/>
+<br/>
+
 ### Inspirations
 
 * [Matt Colville][0] for his excellent thoughts about running games.
@@ -101,6 +112,7 @@ I've started following these rules for combat encounters as I go:
 * [The Monsters Know What They’re Doing][2] for teaching me as a Dungeon Master how to add more variety into combat encounters.
 * [Sir Terry Pratchett][3] for being one of my favorite authors and an absolute inspiration to much of this story world's ideas. And I sometimes panic and use names from the Discworld books when my players catch me with an unexpected need for a name.
 * [Sly Flourish][5] for lots of miscellaneous thoughts and concepts.
+* Puffin Forest for the entertainment and stories.
 
 [0]: https://www.youtube.com/channel/UCkVdb9Yr8fc05_VbAVfskCA
 [1]: https://critrole.com/
