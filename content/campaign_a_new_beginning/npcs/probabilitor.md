@@ -7,6 +7,7 @@ campaign: a-past-and-future-secret
 characterType: Human Male, elderly Conjuration Wizard
 name: Probabilitor
 sessionIntroduced: 2019-12-22/no-pillar
+sessionRetired: 2020-04-12/old-acquaintance
 ---
 
 
